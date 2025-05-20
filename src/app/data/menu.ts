@@ -16,7 +16,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pão italiano tostado com tomates frescos, alho, manjericão e azeite.',
     price: 'R$ 25,00',
     category: 'entrada',
-    image: '/images/menu/bruschetta.jpg'
+    image: '/images/menu/pexe.jpg'
   },
   // ... mais itens
 ];
