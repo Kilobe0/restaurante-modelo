@@ -17,18 +17,17 @@ export const metadata = {
 };
 
 export default function ContatoPage() {
-  // Substitua pelo link real do Google Maps Embed
   const mapEmbedUrl =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.094892322829!2d-46.656827284476!3d-23.56409196759958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1678886543210"; // Exemplo: Av. Paulista
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.094892322829!2d-46.656827284476!3d-23.56409196759958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1678886543210";
 
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <SectionTitle>Fale Conosco</SectionTitle>
-        <div className="bg-white p-8 md:p-12 rounded-xl shadow-xl">
+        <div className="bg-white p-6 sm:p-8 md:p-12 rounded-xl shadow-xl">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16">
-            {/* Coluna da Esquerda: Informações e Mapa */}
             <div className="space-y-8">
+              {/* ... (Informações, Horário, Redes Sociais - sem alteração, já está bom) ... */}
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                   Nossas Informações
@@ -79,22 +78,21 @@ export default function ContatoPage() {
                   Siga-nos
                 </h3>
                 <div className="flex space-x-4">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary-dark transition-colors">
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-500 hover:text-primary-dark transition-colors">
                     <FaInstagram size={28} />
                   </a>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary-dark transition-colors">
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-500 hover:text-primary-dark transition-colors">
                     <FaFacebookF size={28} />
                   </a>
-                  <a href="https://wa.me/5527999998888" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary-dark transition-colors">
+                  <a href="https://wa.me/5527999998888" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="text-gray-500 hover:text-primary-dark transition-colors">
                     <FaWhatsapp size={28} />
                   </a>
                 </div>
               </div>
             </div>
 
-            {/* Coluna da Direita: Formulário de Contato */}
             <div className="space-y-8">
-               <div>
+              <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                   Localização
                 </h3>
@@ -107,6 +105,7 @@ export default function ContatoPage() {
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
+                    title="Localização do Restaurante Saboroso"
                   ></iframe>
                 </div>
               </div>
@@ -114,25 +113,25 @@ export default function ContatoPage() {
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                   Envie uma Mensagem
                 </h3>
-                <form action="#" method="POST" className="space-y-6"> {/* Lembre-se que o envio não está implementado */}
+                <form action="#" method="POST" className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
-                    <input type="text" name="name" id="name" autoComplete="name" required className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" placeholder="Seu nome"/>
+                    <input type="text" name="name" id="name" autoComplete="name" required className="mt-1 block w-full px-4 py-2.5 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm" placeholder="Seu nome"/>
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <input type="email" name="email" id="email" autoComplete="email" required className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" placeholder="seu@email.com"/>
+                    <input type="email" name="email" id="email" autoComplete="email" required className="mt-1 block w-full px-4 py-2.5 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm" placeholder="seu@email.com"/>
                   </div>
                    <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Telefone (Opcional)</label>
-                    <input type="tel" name="phone" id="phone" autoComplete="tel" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" placeholder="(XX) XXXXX-XXXX"/>
+                    <input type="tel" name="phone" id="phone" autoComplete="tel" className="mt-1 block w-full px-4 py-2.5 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm" placeholder="(XX) XXXXX-XXXX"/>
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Sua Mensagem</label>
-                    <textarea id="message" name="message" rows={4} required className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" placeholder="Escreva sua dúvida ou sugestão..."></textarea>
+                    <textarea id="message" name="message" rows={4} required className="mt-1 block w-full px-4 py-2.5 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm" placeholder="Escreva sua dúvida ou sugestão..."></textarea>
                   </div>
                   <div>
-                    <button type="submit" className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-dark transition-colors">
+                    <button type="submit" className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-dark transition-colors duration-150 ease-in-out">
                       Enviar Mensagem
                     </button>
                   </div>

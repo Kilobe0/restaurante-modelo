@@ -50,7 +50,7 @@ export default function CardapioPage() {
 
       {/* Seção de Bebidas */}
       {bebidas.length > 0 && (
-        <section className="mb-12"> {/* Pode remover o mb-12 da última seção se preferir */}
+        <section className=""> {/* Pode remover o mb-12 da última seção se preferir */}
           <h2 className="text-3xl font-semibold mb-6 text-primary-dark border-b-2 border-primary pb-2">Bebidas</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {bebidas.map(item => (
