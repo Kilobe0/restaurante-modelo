@@ -1,11 +1,12 @@
 // src/app/components/ui/SectionTitle.tsx
 interface SectionTitleProps {
   children: React.ReactNode;
+  className?: string; // Para permitir classes adicionais
 }
 
-export default function SectionTitle({ children }: SectionTitleProps) {
+export default function SectionTitle({ children, className }: SectionTitleProps) {
   return (
-    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10 md:mb-12">
+    <h2 className={`text-3xl md:text-4xl font-bold text-center text-eerie_black-500 mb-10 md:mb-12 ${className}`}>
       {children}
     </h2>
   );

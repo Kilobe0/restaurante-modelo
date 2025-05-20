@@ -1,26 +1,8 @@
-@import "tailwindcss";
+@import "tailwindcss"; /* Tailwind já lida com as camadas base, components, utilities */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Você pode manter a definição das fontes aqui se não estiver usando next/font no layout.tsx
+   ou se quiser ter uma fallback global mais explícita */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif); /* Usa a variável CSS da fonte */
+  /* As cores de fundo e texto serão aplicadas pelo Tailwind via classes no layout.tsx */
 }

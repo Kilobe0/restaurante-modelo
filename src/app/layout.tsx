@@ -1,66 +1,58 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google"; // Supondo que estas são suas fontes Geist
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/components/layout/Navbar";
 import Footer from "@/app/components/layout/Footer";
 
-const geistSans = Geist({ // Se você estiver usando next/font/google, seria algo como:
-// const inter = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
+const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight: ['400', '500', '700'] // Exemplo de pesos, ajuste conforme necessário
+  weight: ['300', '400', '500', '600', '700'] // Ajuste os pesos que você realmente usa
 });
 
-const geistMono = Geist_Mono({ // Se você estiver usando next/font/google, seria algo como:
-// const robotoMono = Roboto_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
+const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-  weight: ['400', '700'] // Exemplo de pesos
+  weight: ['400', '500']
 });
 
-// URL base do seu site (importante para metadata)
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl), // Define a URL base para metadados relativos
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Restaurante Saboroso | Culinária Autêntica e Ambiente Acolhedor", // Título padrão
-    template: "%s | Restaurante Saboroso", // Template para títulos de páginas específicas
+    default: "Restaurante Sabor Caseiro | Tradição e Sabor em Cada Prato", // Nome mais genérico para o template
+    template: "%s | Restaurante Sabor Caseiro",
   },
-  description: "Descubra os sabores únicos do Restaurante Saboroso. Oferecemos pratos deliciosos feitos com ingredientes frescos em um ambiente perfeito para todas as ocasiões. Faça sua reserva!",
-  keywords: ["restaurante", "comida", "culinária", "gourmet", "jantar", "almoço", "reservas", "saboroso"],
-  // Open Graph / Facebook
+  description: "Descubra a autêntica culinária no Restaurante Sabor Caseiro. Pratos feitos com ingredientes frescos e carinho, em um ambiente acolhedor. Faça sua reserva!",
+  keywords: ["restaurante", "comida caseira", "culinária tradicional", "sabor", "jantar", "almoço", "reservas"],
   openGraph: {
-    title: "Restaurante Saboroso",
-    description: "Culinária autêntica em um ambiente acolhedor.",
+    title: "Restaurante Sabor Caseiro",
+    description: "O melhor da comida caseira, feita com amor.",
     url: siteUrl,
-    siteName: "Restaurante Saboroso",
+    siteName: "Restaurante Sabor Caseiro",
     images: [
       {
-        url: `${siteUrl}/images/og-image.jpg`, // Crie esta imagem em public/images/og-image.jpg (1200x630px)
+        url: `${siteUrl}/images/default-og-image.jpg`, // CRIE ESTA IMAGEM: public/images/default-og-image.jpg (1200x630)
         width: 1200,
         height: 630,
-        alt: "Prato delicioso do Restaurante Saboroso",
+        alt: "Prato delicioso do Restaurante Sabor Caseiro",
       },
     ],
     locale: "pt_BR",
     type: "website",
   },
-  // Twitter
   twitter: {
     card: "summary_large_image",
-    title: "Restaurante Saboroso",
-    description: "Culinária autêntica em um ambiente acolhedor.",
-    images: [`${siteUrl}/images/og-image.jpg`], // Crie esta imagem
-    // creator: "@seuTwitterHandle", // Se tiver
+    title: "Restaurante Sabor Caseiro",
+    description: "O melhor da comida caseira, feita com amor.",
+    images: [`${siteUrl}/images/default-og-image.jpg`],
   },
-  // Favicons - O Next.js pega automaticamente de /public, mas você pode especificar aqui também se quiser
-  // icons: {
-  //   icon: '/favicon.ico',
-  //   shortcut: '/favicon-16x16.png',
-  //   apple: '/apple-touch-icon.png',
-  // },
+  icons: { // Para favicons
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  }
 };
 
 export default function RootLayout({
@@ -69,12 +61,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className="scroll-smooth"> {/* Adicionado scroll-smooth */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-gray-100 text-gray-800`} // Adicionado bg-gray-100 e text-gray-800 como base
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased flex flex-col min-h-screen bg-background text-foreground`}
       >
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow pt-16 md:pt-20"> {/* Ajuste o pt para compensar a altura do Navbar fixo */}
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

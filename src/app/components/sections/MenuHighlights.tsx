@@ -6,18 +6,16 @@ import SectionTitle from '@/app/components/ui/SectionTitle';
 
 export default function MenuHighlights() {
   const highlightedItems = menuItems.filter(item => item.isFeatured).slice(0, 3);
-  // Se não houver itens com isFeatured, pega os 3 primeiros como fallback
   const finalItems = highlightedItems.length > 0 ? highlightedItems : menuItems.slice(0, 3);
-
 
   if (finalItems.length === 0) {
     return null;
   }
 
   return (
-    <section className="py-12 md:py-16 bg-gray-50">
+    <section className="py-12 md:py-16 bg-pearl-800"> {/* Fundo da seção um pouco mais escuro que o body */}
       <div className="container mx-auto px-4 sm:px-6">
-        <SectionTitle>Destaques do Nosso Cardápio</SectionTitle>
+        <SectionTitle className="text-eerie_black-600">Destaques do Nosso Cardápio</SectionTitle>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
           {finalItems.map(item => (
             <MenuItemCard key={item.id} item={item} />
@@ -26,7 +24,7 @@ export default function MenuHighlights() {
         <div className="text-center">
           <Link
             href="/cardapio"
-            className="bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105"
+            className="bg-primary hover:bg-primary-dark text-eerie_black-500 font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-lg"
           >
             Ver Cardápio Completo
           </Link>
