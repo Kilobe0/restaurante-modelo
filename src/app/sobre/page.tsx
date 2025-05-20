@@ -4,33 +4,34 @@ import Image from "next/image";
 import { FaLeaf, FaUsers, FaUtensils } from "react-icons/fa";
 
 export const metadata = {
-  title: "Sobre Nós | Restaurante Saboroso",
+  title: "Sobre Nós | Restaurante Sabor Caseiro",
   description:
-    "Conheça a história, a paixão pela culinária e os valores do Restaurante Saboroso.",
+    "Conheça a história, a paixão pela culinária e os valores do Restaurante Sabor Caseiro.",
 };
 
 export default function SobrePage() {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-background min-h-screen">
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <SectionTitle>Nossa Essência</SectionTitle>
+        <SectionTitle className="text-foreground">Nossa Essência</SectionTitle>
 
-        <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-xl">
+        <div className="max-w-4xl mx-auto bg-card-bg p-8 md:p-12 rounded-xl shadow-xl">
           <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden mb-8 md:mb-12 shadow-md">
             <Image
-              src="/images/about-banner.jpg" // Crie esta imagem em public/images/
-              alt="Equipe do Restaurante Saboroso em ação"
-              layout="fill"
-              objectFit="cover"
+              src="/images/about-banner.jpg" // VERIFIQUE SE ESTA IMAGEM EXISTE
+              alt="Equipe do Restaurante Sabor Caseiro em ação"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
-             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white text-center">Paixão em Cada Prato</h2>
+             <div className="absolute inset-0 bg-eerie_black-500 bg-opacity-40 flex items-center justify-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-pearl-default text-center px-4">Paixão em Cada Prato</h2>
             </div>
           </div>
 
-          <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+          <div className="prose prose-lg max-w-none text-light-text leading-relaxed"> {/* prose-lg para estilização de texto */}
             <p className="mb-6">
-              Bem-vindo ao <strong>Restaurante Saboroso</strong>! Nascemos do
+              Bem-vindo ao <strong className="text-primary-dark">Restaurante Sabor Caseiro</strong>! Nascemos do
               sonho de compartilhar a autêntica culinária caseira, preparada com
               ingredientes frescos e uma generosa porção de amor. Nossa jornada
               começou há mais de uma década, em uma pequena cozinha familiar, e
@@ -44,54 +45,54 @@ export default function SobrePage() {
               contemporâneo que surpreende e encanta.
             </p>
 
-            <h3 className="text-2xl font-semibold text-primary-dark mt-10 mb-4">
+            <h3 className="text-2xl font-semibold text-secondary-dark mt-10 mb-6">
               Nossos Pilares
             </h3>
-            <div className="grid md:grid-cols-3 gap-8 mb-10 text-center">
-              <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <FaLeaf className="text-4xl text-primary mb-3" />
-                <h4 className="text-xl font-semibold mb-2">
+            <div className="grid md:grid-cols-3 gap-8 mb-10 text-center not-prose"> {/* not-prose para resetar estilos do prose aqui */}
+              <div className="flex flex-col items-center p-6 border border-pearl-500 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-pearl-900">
+                <FaLeaf className="text-5xl text-primary mb-4" />
+                <h4 className="text-xl font-semibold mb-2 text-foreground">
                   Ingredientes Frescos
                 </h4>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-light-text">
                   Selecionamos diariamente os melhores produtos locais para
                   garantir o máximo de sabor e qualidade.
                 </p>
               </div>
-              <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <FaUtensils className="text-4xl text-primary mb-3" />
-                <h4 className="text-xl font-semibold mb-2">
+              <div className="flex flex-col items-center p-6 border border-pearl-500 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-pearl-900">
+                <FaUtensils className="text-5xl text-primary mb-4" />
+                <h4 className="text-xl font-semibold mb-2 text-foreground">
                   Receitas com Alma
                 </h4>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-light-text">
                   Nossas receitas são passadas de geração em geração,
                   preservando a tradição e o carinho da cozinha caseira.
                 </p>
               </div>
-              <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <FaUsers className="text-4xl text-primary mb-3" />
-                <h4 className="text-xl font-semibold mb-2">
+              <div className="flex flex-col items-center p-6 border border-pearl-500 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-pearl-900">
+                <FaUsers className="text-5xl text-primary mb-4" />
+                <h4 className="text-xl font-semibold mb-2 text-foreground">
                   Ambiente Acolhedor
                 </h4>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-light-text">
                   Criamos um espaço onde você se sente em casa, perfeito para
                   desfrutar de boa companhia e ótima comida.
                 </p>
               </div>
             </div>
 
-            <h3 className="text-2xl font-semibold text-primary-dark mt-10 mb-4">
+            <h3 className="text-2xl font-semibold text-secondary-dark mt-10 mb-4">
               Nossa Equipe
             </h3>
             <p className="mb-6">
               Por trás de cada sorriso e cada prato delicioso, há uma equipe
               dedicada e apaixonada pelo que faz. Do nosso chef experiente aos
               atendentes que o recebem com carinho, todos trabalhamos juntos
-              para tornar sua experiência no Restaurante Saboroso
+              para tornar sua experiência no Restaurante Sabor Caseiro
               inesquecível.
             </p>
             <p>
-              Agradecemos por escolher o Restaurante Saboroso. Esperamos
+              Agradecemos por escolher o Restaurante Sabor Caseiro. Esperamos
               servi-lo em breve e compartilhar consigo a nossa paixão pela
               culinária!
             </p>

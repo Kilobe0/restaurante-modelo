@@ -5,33 +5,39 @@ import SectionTitle from '@/app/components/ui/SectionTitle';
 
 export default function AboutTeaser() {
   return (
-    <section className="py-12 md:py-16">
-      <div className="container mx-auto px-6">
-        <SectionTitle>Conheça Nossa História</SectionTitle>
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          <div className="md:w-1/2">
-            {/* Adicione uma imagem do ambiente ou do chef */}
-            <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+    <section className="py-16 md:py-20 bg-background"> {/* Fundo da paleta */}
+      <div className="container mx-auto px-4 sm:px-6">
+        <SectionTitle className="text-foreground">Conheça Nossa Essência</SectionTitle>
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+          <div className="lg:w-1/2 w-full">
+            <div className="relative aspect-[16/10] rounded-lg overflow-hidden shadow-xl"> {/* Ajustado aspect ratio */}
               <Image
-                src="/images/about-teaser.jpg" // Crie /public/images/about-teaser.jpg
-                alt="Ambiente do restaurante"
-                layout="fill"
-                objectFit="cover"
+                src="/images/about-teaser.jpg" // VERIFIQUE SE ESTA IMAGEM EXISTE
+                alt="Ambiente interno charmoso do Restaurante Sabor Caseiro"
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
-          <div className="md:w-1/2">
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              No <span className="font-semibold text-primary-dark">NomeDoSeuRestaurante</span>, celebramos a culinária autêntica com ingredientes frescos e uma paixão por sabores que encantam. Nossa jornada começou com o sonho de criar um espaço acolhedor onde amigos e famílias pudessem compartilhar momentos especiais.
+          <div className="lg:w-1/2 w-full">
+            <h3 className="text-2xl md:text-3xl font-semibold text-secondary-dark mb-4">
+              Paixão que se Saboreia
+            </h3>
+            <p className="text-lg text-light-text mb-6 leading-relaxed">
+              No <span className="font-semibold text-primary-dark">Restaurante Sabor Caseiro</span>, 
+              celebramos a culinária autêntica com ingredientes frescos e uma paixão por sabores que 
+              encantam. Nossa jornada começou com o sonho de criar um espaço acolhedor onde amigos e 
+              famílias pudessem compartilhar momentos especiais.
             </p>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Descubra a essência da nossa cozinha e a dedicação em cada prato.
+            <p className="text-light-text mb-8 leading-relaxed">
+              Descubra a essência da nossa cozinha e a dedicação que colocamos em cada prato.
             </p>
             <Link
-              href="/sobre" // Link para a futura página "Sobre Nós"
-              className="inline-block bg-secondary hover:opacity-90 text-white font-semibold py-3 px-8 rounded-lg text-lg transition duration-300"
+              href="/sobre"
+              className="inline-block bg-primary hover:bg-primary-dark text-eerie_black-500 font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105"
             >
-              Saiba Mais
+              Saiba Mais Sobre Nós
             </Link>
           </div>
         </div>
