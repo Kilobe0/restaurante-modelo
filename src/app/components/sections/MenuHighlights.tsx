@@ -5,19 +5,21 @@ import MenuItemCard from '@/app/components/ui/MenuItemCard';
 import SectionTitle from '@/app/components/ui/SectionTitle';
 
 export default function MenuHighlights() {
-  // Exemplo: pegar os 3 primeiros itens ou itens marcados como destaque
-  const highlightedItems = menuItems.slice(0, 3); // Ou use .filter() para uma lógica mais específica
+  const highlightedItems = menuItems.filter(item => item.isFeatured).slice(0, 3);
+  // Se não houver itens com isFeatured, pega os 3 primeiros como fallback
+  const finalItems = highlightedItems.length > 0 ? highlightedItems : menuItems.slice(0, 3);
 
-  if (highlightedItems.length === 0) {
-    return null; // Não renderizar a seção se não houver itens
+
+  if (finalItems.length === 0) {
+    return null;
   }
 
   return (
-    <section className="py-12 md:py-16 bg-gray-50"> {/* Fundo sutil para diferenciar */}
-      <div className="container mx-auto px-6">
+    <section className="py-12 md:py-16 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6">
         <SectionTitle>Destaques do Nosso Cardápio</SectionTitle>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-          {highlightedItems.map(item => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+          {finalItems.map(item => (
             <MenuItemCard key={item.id} item={item} />
           ))}
         </div>
