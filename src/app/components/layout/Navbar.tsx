@@ -17,15 +17,20 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-card-bg shadow-md sticky top-0 z-50"> {/* Fundo branco/claro */}
+    <nav 
+      className="sticky top-0 z-50 shadow-md 
+                 bg-card-bg/80 dark:bg-eerie_black-400/80  // Cor de fundo com opacidade
+                 backdrop-blur-md" // Efeito de blur no backdrop
+    >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center">
             <Image src="/logoipsum.svg" alt="Logo Restaurante Sabor Caseiro" width={130} height={50} priority />
           </Link>
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-2">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              <Link key={link.href} href={link.href} className="text-foreground dark:text-pearl-200 hover:text-primary dark:hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 {link.label}
               </Link>
             ))}
@@ -38,7 +43,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-primary hover:bg-pearl-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+              className="inline-flex items-center justify-center p-2 rounded-md text-foreground dark:text-pearl-200 hover:text-primary dark:hover:text-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
               aria-controls="mobile-menu"
               aria-expanded={isOpen}
             >
@@ -50,14 +55,15 @@ export default function Navbar() {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden border-t border-pearl-500" id="mobile-menu"> {/* Borda sutil */}
+        // Aplicar também o fundo com blur e opacidade ao menu mobile
+        <div className="md:hidden border-t border-pearl-500 dark:border-eerie_black-600 bg-card-bg/90 dark:bg-eerie_black-500/90 backdrop-blur-md" id="mobile-menu">
           <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="text-foreground hover:bg-pearl-800 hover:text-primary block px-3 py-2.5 rounded-md text-base font-medium transition-colors"> {/* Fundo de hover mais sutil */}
+              <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="text-foreground dark:text-pearl-200 hover:bg-pearl-800 dark:hover:bg-eerie_black-600 hover:text-primary dark:hover:text-primary-light block px-3 py-2.5 rounded-md text-base font-medium transition-colors">
                 {link.label}
               </Link>
             ))}
-            <Link href="/reservas" onClick={() => setIsOpen(false)} className="bg-primary hover:bg-primary-dark text-eerie_black-500 block w-full text-center mt-2 px-3 py-3 rounded-md text-base font-medium transition-colors shadow hover:shadow-md">
+            <Link href="/reservas" onClick={() => setIsOpen(false)} className="bg-red-500 hover:bg-red-800 text-eerie_black-500 block w-full text-center mt-2 px-3 py-3 rounded-md text-base font-medium transition-colors shadow hover:shadow-md">
               Reservar Agora
             </Link>
           </div>
