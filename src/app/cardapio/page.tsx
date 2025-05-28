@@ -34,7 +34,7 @@ export default function CardapioPage() {
   return (
     <div className="bg-background min-h-screen">
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <SectionTitle className="text-foreground mb-16">Nosso Cardápio Delicioso</SectionTitle> {/* Usando SectionTitle e cor */}
+        <SectionTitle className="text-foreground mb-16">Nosso Cardápio Delicioso</SectionTitle> {/* OK */}
 
         <CategorySection title="Entradas Frescas" items={entradas} />
         <CategorySection title="Pratos Principais Saborosos" items={principais} />
