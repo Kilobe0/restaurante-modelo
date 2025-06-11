@@ -24,7 +24,7 @@ export default function SobrePage() {
               style={{ objectFit: 'cover' }}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-             <div className="absolute inset-0 bg-eerie_black-500 bg-opacity-40 flex items-center justify-center">
+             <div className="absolute inset-0 bg-overlay-gallery flex items-center justify-center">
               <h2 className="text-3xl md:text-4xl font-bold text-pearl-default text-center px-4">Paixão em Cada Prato</h2>
             </div>
           </div>

@@ -14,7 +14,7 @@ export default function HeroSection() {
         className="-z-10"
         priority
       />
-      <div className="absolute inset-0 bg-eerie_black-500 opacity-60 -z-10"></div> {/* Overlay escuro */}
+      <div className="absolute inset-0 bg-overlay-hero -z-10"></div> {/* Overlay escuro */}
       <div className="container mx-auto px-4 sm:px-6 text-center z-10">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight text-pearl-50"> {/* Título principal claro */}
           Bem-vindo ao <span className="text-vanilla">Restaurante Sabor Caseiro</span> {/* Destaque em vanilla */}
@@ -23,10 +23,10 @@ export default function HeroSection() {
           Experimente sabores autênticos e um ambiente inesquecível, onde cada prato é feito com amor.
         </p>
         <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center items-center">
-          <Link href="/cardapio" className="bg-primary hover:bg-primary-dark text-eerie_black-500 font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105 w-full sm:w-auto shadow-md hover:shadow-lg">
+          <Link href="/cardapio" className="bg-primary hover:bg-primary-dark text-on-primary font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105 w-full sm:w-auto shadow-md hover:shadow-lg">
             Ver Cardápio
           </Link>
-          <Link href="/reservas" className="border-2 border-vanilla hover:bg-vanilla hover:text-eerie_black-500 text-vanilla font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 ease-in-out w-full sm:w-auto shadow-md hover:shadow-lg">
+          <Link href="/reservas" className="border-2 border-vanilla hover:bg-vanilla hover:text-on-accent text-vanilla font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 ease-in-out w-full sm:w-auto shadow-md hover:shadow-lg">
             Fazer Reserva
           </Link>
         </div>

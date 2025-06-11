@@ -44,7 +44,7 @@ export default function GaleriaPage() {
                     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 6"><filter id="b" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation=".5"></feGaussianBlur></filter><rect filter="url(#b)" width="100%" height="100%" fill="#bbb"></rect></svg>'
                   ).toString("base64")}`}
                 />
-                <div className="absolute inset-0 bg-eerie_black-500 bg-opacity-30 group-hover:bg-opacity-10 transition-all duration-300 flex items-end p-3">
+                <div className="absolute inset-0 bg-overlay-gallery group-hover:bg-opacity-10 transition-all duration-300 flex items-end p-3">
                   <p className="text-pearl-900 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 truncate">
                     {image.alt}
                   </p>

@@ -6,7 +6,7 @@ import Image from 'next/image'; // Para o logo no footer
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-footer-bg text-pearl-800 pt-12 pb-8"> {/* Usando cores da paleta */}
+    <footer className="bg-footer-bg text-on-dark-bg pt-12 pb-8"> {/* Usando cores da paleta */}
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10 text-center md:text-left">
           <div className="lg:col-span-1 flex flex-col items-center md:items-start">
@@ -18,13 +18,13 @@ export default function Footer() {
                 height={58}
               />
             </Link>
-            <p className="text-sm leading-relaxed text-pearl-700">
+            <p className="text-sm leading-relaxed text-text-muted">
               Onde cada prato conta uma história de sabor e tradição.
             </p>
           </div>
 
           <div>
-            <h5 className="text-lg font-semibold mb-4 text-pearl-default">Navegue</h5>
+            <h5 className="text-lg font-semibold mb-4 text-on-dark-bg">Navegue</h5>
             <ul className="space-y-2">
               <li><Link href="/" className="hover:text-primary transition-colors text-sm">Home</Link></li>
               <li><Link href="/cardapio" className="hover:text-primary transition-colors text-sm">Cardápio</Link></li>
@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5 className="text-lg font-semibold mb-4 text-pearl-default">Contato</h5>
+            <h5 className="text-lg font-semibold mb-4 text-on-dark-bg">Contato</h5>
             <address className="not-italic text-sm space-y-2">
               <p>Rua das Delícias, 123</p>
               <p>Cidade Gastronômica, ES</p>
@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h5 className="text-lg font-semibold mb-4 text-pearl-default">Siga-nos</h5>
+            <h5 className="text-lg font-semibold mb-4 text-on-dark-bg">Siga-nos</h5>
             <div className="flex justify-center md:justify-start space-x-5">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-primary transition-colors">
                 <FaInstagram size={24} />
@@ -66,7 +66,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-eerie_black-600 pt-8 text-center text-xs text-pearl-700">
+        <div className="border-t border-eerie_black-600 pt-8 text-center text-xs text-text-muted">
           <p>© {currentYear} Restaurante Sabor Caseiro. Todos os direitos reservados.</p>
           <p className="mt-1">
             Design por <a href="https://seusite.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">Sua Agência/Você</a>

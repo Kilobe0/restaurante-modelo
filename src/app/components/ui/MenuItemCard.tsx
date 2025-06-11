@@ -25,7 +25,7 @@ export default function MenuItemCard({ item }: MenuItemCardProps) {
         </div>
       )}
       <div className="p-5 flex flex-col flex-grow"> {/* Ajustei padding */}
-        <h3 className="text-xl font-semibold text-eerie_black-500 mb-2">{item.name}</h3>
+        <h3 className="text-xl font-semibold text-foreground mb-2">{item.name}</h3>
         <p className="text-light-text text-sm mb-4 flex-grow">{item.description}</p>
         <div className="flex justify-between items-center mt-auto pt-3 border-t border-pearl-500"> {/* Linha separadora */}
           <p className="text-lg font-bold text-primary">{item.price}</p>

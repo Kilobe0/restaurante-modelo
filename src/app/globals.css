@@ -1,8 +1,106 @@
-@import "tailwindcss"; /* Tailwind já lida com as camadas base, components, utilities */
+@import "tailwindcss";
 
-/* Você pode manter a definição das fontes aqui se não estiver usando next/font no layout.tsx
-   ou se quiser ter uma fallback global mais explícita */
+@theme {
+  /* Base palette colors as CSS variables */
+  --color-eerie-black: #1b2021;
+  --color-eerie-black-100: #060707;
+  --color-eerie-black-200: #0b0d0d;
+  --color-eerie-black-300: #111414;
+  --color-eerie-black-400: #161a1b;
+  --color-eerie-black-500: #1b2021;
+  --color-eerie-black-600: #445153;
+  --color-eerie-black-700: #6c8084;
+  --color-eerie-black-800: #9cabae;
+  --color-eerie-black-900: #ced5d7;
+
+  --color-ebony: #51513d;
+  --color-ebony-100: #10100c;
+  --color-ebony-200: #212119;
+  --color-ebony-300: #313125;
+  --color-ebony-400: #414131;
+  --color-ebony-500: #51513d;
+  --color-ebony-600: #7b7b5d;
+  --color-ebony-700: #a0a081;
+  --color-ebony-800: #c0c0ab;
+  --color-ebony-900: #dfdfd5;
+
+  --color-moss-green: #a6a867;
+  --color-moss-green-100: #222214;
+  --color-moss-green-200: #444527;
+  --color-moss-green-300: #66673b;
+  --color-moss-green-400: #87894f;
+  --color-moss-green-500: #a6a867;
+  --color-moss-green-600: #b7b985;
+  --color-moss-green-700: #c9cba4;
+  --color-moss-green-800: #dbdcc2;
+  --color-moss-green-900: #edeee1;
+
+  --color-vanilla: #e3dc95;
+  --color-vanilla-100: #3c3810;
+  --color-vanilla-200: #777020;
+  --color-vanilla-300: #b3a830;
+  --color-vanilla-400: #d3c95b;
+  --color-vanilla-500: #e3dc95;
+  --color-vanilla-600: #e9e4ab;
+  --color-vanilla-700: #eeeac0;
+  --color-vanilla-800: #f4f1d5;
+  --color-vanilla-900: #f9f8ea;
+
+  --color-pearl: #e3dcc2;
+  --color-pearl-100: #3a331b;
+  --color-pearl-200: #746635;
+  --color-pearl-300: #ae9a50;
+  --color-pearl-400: #c9bb8a;
+  --color-pearl-500: #e3dcc2;
+  --color-pearl-600: #e9e4cf;
+  --color-pearl-700: #efeadb;
+  --color-pearl-800: #f4f1e7;
+  --color-pearl-900: #faf8f3;
+
+  /* Semantic colors using CSS variable references */
+  --color-primary: #a6a867;
+  --color-primary-light: #b7b985;
+  --color-primary-dark: #87894f;
+  --color-secondary: #51513d;
+  --color-secondary-light: #7b7b5d;
+  --color-secondary-dark: #414131;
+  --color-accent: #e3dc95;
+  --color-accent-dark: #d3c95b;
+  --color-background: #faf8f3;
+  --color-foreground: #1b2021;
+  --color-light-text: #445153;
+  --color-card-bg: #ffffff;
+  --color-footer-bg: #161a1b;
+
+  /* Text-on-* semantic colors for proper contrast */
+  --color-text-muted: #445153;
+  --color-text-on-primary: #1b2021;
+  --color-text-on-secondary: #faf8f3;
+  --color-text-on-accent: #1b2021;
+  --color-text-on-dark-bg: #e9e4cf;
+
+  /* Overlay colors with opacity */
+  --color-overlay-gallery: #1b20214D;
+  --color-overlay-hero: #1b202199;
+}
+
+/* Custom CSS variables for enhanced theme support */
+:root {
+  /* Font family variables */
+  --font-sans: var(--font-geist-sans, 'Arial', 'Helvetica', sans-serif);
+  --font-mono: var(--font-geist-mono, 'Courier New', monospace);
+}
+
+/* Enhanced body styles */
 body {
-  font-family: var(--font-sans, Arial, Helvetica, sans-serif); /* Usa a variável CSS da fonte */
-  /* As cores de fundo e texto serão aplicadas pelo Tailwind via classes no layout.tsx */
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth transitions for color changes */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }

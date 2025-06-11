@@ -34,7 +34,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/reservas" className="ml-3 bg-primary hover:bg-primary-dark text-eerie_black-500 font-semibold py-2.5 px-5 rounded-md text-sm transition-colors shadow hover:shadow-md">
+            <Link href="/reservas" className="ml-3 bg-primary hover:bg-primary-dark text-on-primary font-semibold py-2.5 px-5 rounded-md text-sm transition-colors shadow hover:shadow-md">
               Reservar Agora
             </Link>
           </div>
@@ -63,7 +63,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/reservas" onClick={() => setIsOpen(false)} className="bg-red-500 hover:bg-red-800 text-eerie_black-500 block w-full text-center mt-2 px-3 py-3 rounded-md text-base font-medium transition-colors shadow hover:shadow-md">
+            <Link href="/reservas" onClick={() => setIsOpen(false)} className="bg-primary hover:bg-primary-dark text-on-primary block w-full text-center mt-2 px-3 py-3 rounded-md text-base font-medium transition-colors shadow hover:shadow-md">
               Reservar Agora
             </Link>
           </div>
