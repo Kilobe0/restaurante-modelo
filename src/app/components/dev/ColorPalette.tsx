@@ -54,7 +54,8 @@ export default function ColorPalette() {
     { name: 'Text on Primary', value: '#1b2021', className: 'bg-text-on-primary', textColor: 'text-on-dark-bg' },
     { name: 'Text on Secondary', value: '#faf8f3', className: 'bg-text-on-secondary' },
     { name: 'Text on Accent', value: '#1b2021', className: 'bg-text-on-accent', textColor: 'text-on-dark-bg' },
-    { name: 'Text on Dark BG', value: '#e9e4cf', className: 'bg-text-on-dark-bg' },
+    { name: 'Text on Dark BG', value: '#f4f1e7', className: 'bg-text-on-dark-bg' },
+    { name: 'Text Muted on Dark', value: '#c9cba4', className: 'bg-text-muted-on-dark' },
   ];
 
   const overlayColors = [

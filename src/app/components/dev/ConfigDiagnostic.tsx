@@ -35,6 +35,7 @@ export default function ConfigDiagnostic() {
     { name: 'text-on-secondary', class: 'text-on-secondary' },
     { name: 'text-on-accent', class: 'text-on-accent' },
     { name: 'text-on-dark-bg', class: 'text-on-dark-bg' },
+    { name: 'text-muted-on-dark', class: 'text-text-muted-on-dark' },
   ];
 
 
@@ -150,7 +151,11 @@ export default function ConfigDiagnostic() {
             <h3 className="text-lg font-medium text-foreground mb-2">Footer Style</h3>
             <div className="bg-footer-bg p-4 rounded-lg">
               <h4 className="text-on-dark-bg font-semibold mb-2">Footer Content</h4>
-              <p className="text-text-muted">This simulates footer styling with proper contrast.</p>
+              <p className="text-text-muted-on-dark">This simulates footer styling with proper contrast.</p>
+              <div className="mt-3 space-y-1">
+                <p className="text-on-dark-bg text-sm">Main footer text (text-on-dark-bg)</p>
+                <p className="text-text-muted-on-dark text-xs">Muted footer text (text-muted-on-dark)</p>
+              </div>
             </div>
           </div>
         </div>

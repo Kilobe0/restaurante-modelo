@@ -77,7 +77,8 @@
   --color-text-on-primary: #1b2021;
   --color-text-on-secondary: #faf8f3;
   --color-text-on-accent: #1b2021;
-  --color-text-on-dark-bg: #e9e4cf;
+  --color-text-on-dark-bg: #f4f1e7; /* pearl-800 for better contrast on dark backgrounds */
+  --color-text-muted-on-dark: #c9cba4; /* moss-green-700 for muted text on dark backgrounds */
 
   /* Overlay colors with opacity */
   --color-overlay-gallery: #1b20214D;
