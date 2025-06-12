@@ -13,7 +13,7 @@ export default function AboutTeaser() {
             <div className="relative aspect-[16/10] rounded-lg overflow-hidden shadow-xl"> {/* Ajustado aspect ratio */}
               <Image
                 src="/images/about-teaser.jpg" // VERIFIQUE SE ESTA IMAGEM EXISTE
-                alt="Ambiente interno charmoso do Restaurante Sabor Caseiro"
+                alt="Ambiente interno charmoso do Eufrásio Gourmet"
                 fill
                 style={{ objectFit: 'cover' }}
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -25,10 +25,10 @@ export default function AboutTeaser() {
               Paixão que se Saboreia
             </h3>
             <p className="text-lg text-light-text mb-6 leading-relaxed">
-              No <span className="font-semibold text-primary-dark">Restaurante Sabor Caseiro</span>, 
-              celebramos a culinária autêntica com ingredientes frescos e uma paixão por sabores que 
-              encantam. Nossa jornada começou com o sonho de criar um espaço acolhedor onde amigos e 
-              famílias pudessem compartilhar momentos especiais.
+              No <span className="font-semibold text-primary-dark">Eufrásio Gourmet</span>,
+              celebramos a diversidade culinária com nosso buffet variado que vai da culinária japonesa
+              às carnes grelhadas e frango caipira. Nossa paixão é oferecer uma experiência gastronômica
+              única onde amigos e famílias podem compartilhar momentos especiais.
             </p>
             <p className="text-light-text mb-8 leading-relaxed">
               Descubra a essência da nossa cozinha e a dedicação que colocamos em cada prato.

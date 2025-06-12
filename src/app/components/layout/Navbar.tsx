@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center">
-            <Image src="/logoipsum.svg" alt="Logo Restaurante Sabor Caseiro" width={130} height={50} priority />
+            <Image src="/logoipsum.svg" alt="Logo Eufrásio Gourmet" width={130} height={50} priority />
           </Link>
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-2">

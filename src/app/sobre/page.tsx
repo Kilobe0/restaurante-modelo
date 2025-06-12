@@ -4,9 +4,9 @@ import Image from "next/image";
 import { FaLeaf, FaUsers, FaUtensils } from "react-icons/fa";
 
 export const metadata = {
-  title: "Sobre Nós | Restaurante Sabor Caseiro",
+  title: "Sobre Nós | Eufrásio Gourmet",
   description:
-    "Conheça a história, a paixão pela culinária e os valores do Restaurante Sabor Caseiro.",
+    "Conheça a história, a paixão pela culinária e os valores do Eufrásio Gourmet.",
 };
 
 export default function SobrePage() {
@@ -19,7 +19,7 @@ export default function SobrePage() {
           <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden mb-8 md:mb-12 shadow-md">
             <Image
               src="/images/about-banner.jpg" // VERIFIQUE SE ESTA IMAGEM EXISTE
-              alt="Equipe do Restaurante Sabor Caseiro em ação"
+              alt="Equipe do Eufrásio Gourmet em ação"
               fill
               style={{ objectFit: 'cover' }}
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -31,17 +31,17 @@ export default function SobrePage() {
 
           <div className="prose prose-lg max-w-none text-light-text leading-relaxed"> {/* prose-lg para estilização de texto */}
             <p className="mb-6">
-              Bem-vindo ao <strong className="text-primary-dark">Restaurante Sabor Caseiro</strong>! Nascemos do
-              sonho de compartilhar a autêntica culinária caseira, preparada com
-              ingredientes frescos e uma generosa porção de amor. Nossa jornada
-              começou há mais de uma década, em uma pequena cozinha familiar, e
-              hoje nos orgulhamos de ser um ponto de encontro para amantes da
-              boa comida e de momentos memoráveis.
+              Bem-vindo ao <strong className="text-primary-dark">Eufrásio Gourmet</strong>! Nascemos do
+              sonho de oferecer uma experiência gastronômica única e diversificada,
+              com nosso buffet variado que vai da culinária japonesa às tradições brasileiras.
+              Nossa jornada começou com a paixão por unir diferentes culturas culinárias
+              em um só lugar, e hoje nos orgulhamos de ser um ponto de encontro para
+              amantes da boa comida e de momentos memoráveis.
             </p>
             <p className="mb-6">
-              Acreditamos que a comida tem o poder de unir pessoas, contar
+              Acreditamos que a diversidade culinária tem o poder de unir pessoas, contar
               histórias e criar laços. Por isso, cada prato que sai da nossa
-              cozinha é uma celebração dos sabores tradicionais, com um toque
+              cozinha é uma celebração dos sabores do mundo, com um toque
               contemporâneo que surpreende e encanta.
             </p>
 
@@ -65,8 +65,8 @@ export default function SobrePage() {
                   Receitas com Alma
                 </h4>
                 <p className="text-sm text-light-text">
-                  Nossas receitas são passadas de geração em geração,
-                  preservando a tradição e o carinho da cozinha caseira.
+                  Nossas receitas combinam tradições culinárias diversas,
+                  desde a culinária japonesa até os sabores brasileiros autênticos.
                 </p>
               </div>
               <div className="flex flex-col items-center p-6 border border-pearl-500 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-pearl-900">
@@ -88,11 +88,11 @@ export default function SobrePage() {
               Por trás de cada sorriso e cada prato delicioso, há uma equipe
               dedicada e apaixonada pelo que faz. Do nosso chef experiente aos
               atendentes que o recebem com carinho, todos trabalhamos juntos
-              para tornar sua experiência no Restaurante Sabor Caseiro
+              para tornar sua experiência no Eufrásio Gourmet
               inesquecível.
             </p>
             <p>
-              Agradecemos por escolher o Restaurante Sabor Caseiro. Esperamos
+              Agradecemos por escolher o Eufrásio Gourmet. Esperamos
               servi-lo em breve e compartilhar consigo a nossa paixão pela
               culinária!
             </p>

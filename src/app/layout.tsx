@@ -14,22 +14,22 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Restaurante Sabor Caseiro | Tradição e Sabor em Cada Prato",
-    template: "%s | Restaurante Sabor Caseiro",
+    default: "Eufrásio Gourmet | Tradição e Sabor em Cada Prato",
+    template: "%s | Eufrásio Gourmet",
   },
-  description: "Descubra a autêntica culinária no Restaurante Sabor Caseiro. Pratos feitos com ingredientes frescos e carinho, em um ambiente acolhedor. Faça sua reserva!",
-  keywords: ["restaurante", "comida caseira", "culinária tradicional", "sabor", "jantar", "almoço", "reservas"],
+  description: "Descubra a autêntica culinária no Eufrásio Gourmet. Buffet variado com culinária japonesa, carnes grelhadas, frango caipira, feijão tropeiro, sushi e frutos do mar. Faça sua reserva!",
+  keywords: ["restaurante", "eufrásio gourmet", "buffet variado", "culinária japonesa", "sushi", "frutos do mar", "feijão tropeiro", "sete lagoas"],
   openGraph: {
-    title: "Restaurante Sabor Caseiro",
-    description: "O melhor da comida caseira, feita com amor.",
+    title: "Eufrásio Gourmet",
+    description: "Buffet variado com culinária japonesa, carnes grelhadas e muito mais.",
     url: siteUrl,
-    siteName: "Restaurante Sabor Caseiro",
+    siteName: "Eufrásio Gourmet",
     images: [
       {
         url: `${siteUrl}/images/default-og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Prato delicioso do Restaurante Sabor Caseiro",
+        alt: "Prato delicioso do Eufrásio Gourmet",
       },
     ],
     locale: "pt_BR",
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Restaurante Sabor Caseiro",
-    description: "O melhor da comida caseira, feita com amor.",
+    title: "Eufrásio Gourmet",
+    description: "Buffet variado com culinária japonesa, carnes grelhadas e muito mais.",
     images: [`${siteUrl}/images/default-og-image.jpg`],
   },
   icons: {

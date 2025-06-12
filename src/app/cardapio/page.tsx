@@ -5,8 +5,8 @@ import SectionTitle from "@/app/components/ui/SectionTitle"; // Importar Section
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nosso Cardápio", // O template no layout.tsx adicionará "| Restaurante Sabor Caseiro"
-  description: "Explore a variedade de pratos deliciosos do Restaurante Sabor Caseiro, desde entradas a sobremesas.",
+  title: "Nosso Cardápio", // O template no layout.tsx adicionará "| Eufrásio Gourmet"
+  description: "Explore a variedade de pratos deliciosos do Eufrásio Gourmet, desde nosso buffet variado com culinária japonesa até pratos tradicionais brasileiros.",
 };
 
 export default function CardapioPage() {

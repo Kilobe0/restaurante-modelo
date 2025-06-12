@@ -3,9 +3,9 @@ import SectionTitle from "@/app/components/ui/SectionTitle";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Galeria | Restaurante Sabor Caseiro",
+  title: "Galeria | Eufrásio Gourmet",
   description:
-    "Veja fotos dos nossos pratos deliciosos, do ambiente acolhedor e de momentos especiais no Restaurante Sabor Caseiro.",
+    "Veja fotos dos nossos pratos deliciosos, do ambiente acolhedor e de momentos especiais no Eufrásio Gourmet.",
 };
 
 // Certifique-se que estas imagens existem em public/images/gallery/

@@ -1,6 +1,6 @@
 // src/app/contato/page.tsx
 
-import { FaInstagram, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import SectionTitle from "../components/ui/SectionTitle";
 
 // ... imports ...
@@ -21,15 +21,18 @@ export default function ContatoPage() {
                   <p className="flex items-start">
                     <FaMapMarkerAlt className="text-primary mt-1 mr-3 flex-shrink-0" size={20} />
                     <span>
-                      Rua das Delícias, 123, Bairro Saboroso <br />
-                      Cidade Gastronômica, ES - CEP 12345-678
+                      Rua Governador Milton Campos, 145 – Centro <br />
+                      Sete Lagoas (MG) - CEP 35700‑010
                     </span>
                   </p>
                   <p className="flex items-center">
                     <FaPhoneAlt className="text-primary mr-3 flex-shrink-0" size={18} />
-                    <a href="tel:+5527999998888" className="hover:text-primary-dark">(27) 99999-8888</a>
+                    <a href="tel:+5531999122915" className="hover:text-primary-dark">(31) 99912-2915</a>
                   </p>
-                  {/* ... etc ... */}
+                  <p className="flex items-center">
+                    <FaWhatsapp className="text-primary mr-3 flex-shrink-0" size={18} />
+                    <a href="https://wa.me/5531999122915" target="_blank" rel="noopener noreferrer" className="hover:text-primary-dark">WhatsApp: (31) 99912-2915</a>
+                  </p>
                 </div>
               </div>
               {/* ... (Horário, Redes Sociais com cores da paleta) ... */}

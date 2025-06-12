@@ -14,7 +14,7 @@ export default function ReservasPage() {
             Garanta sua mesa e desfrute de momentos deliciosos conosco.
             Para grupos maiores de 8 pessoas ou eventos especiais, por favor,
             entre em contato diretamente pelo telefone{" "}
-            <a href="tel:+5527999998888" className="text-primary hover:text-primary-dark font-medium">(27) 99999-8888</a>.
+            <a href="tel:+5531999122915" className="text-primary hover:text-primary-dark font-medium">(31) 99912-2915</a>.
           </p>
 
           <form action="#" method="POST" className="space-y-6">
