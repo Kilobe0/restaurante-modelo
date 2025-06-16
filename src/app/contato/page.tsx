@@ -41,7 +41,7 @@ export default function ContatoPage() {
                   Siga-nos
                 </h3>
                 <div className="flex space-x-4">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-light-text hover:text-primary transition-colors">
+                  <a href="https://www.instagram.com/eufrasiogourmet/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-light-text hover:text-primary transition-colors">
                     <FaInstagram size={28} />
                   </a>
                   {/* ... outros ícones ... */}
@@ -57,11 +57,11 @@ export default function ContatoPage() {
                 <form action="#" method="POST" className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-light-text mb-1">Nome Completo</label>
-                    <input type="text" name="name" id="name" autoComplete="name" required className="mt-1 block w-full px-4 py-2.5 border-ebony-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm bg-pearl-900 text-foreground placeholder-ebony-600" placeholder="Seu nome"/>
+                    <input type="text" name="name" id="name" autoComplete="name" required className="mt-1 block w-full px-4 py-2.5 border-light-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm bg-light-900 text-foreground placeholder-light-600" placeholder="Seu nome"/>
                   </div>
                   {/* ... outros inputs com cores da paleta ... */}
                   <div>
-                    <button type="submit" className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-base font-medium text-eerie_black-500 bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-dark transition-colors duration-150 ease-in-out">
+                    <button type="submit" className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-base font-medium text-on-primary bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-dark transition-colors duration-150 ease-in-out">
                       Enviar Mensagem
                     </button>
                   </div>

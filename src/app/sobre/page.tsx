@@ -32,17 +32,16 @@ export default function SobrePage() {
           <div className="prose prose-lg max-w-none text-light-text leading-relaxed"> {/* prose-lg para estilização de texto */}
             <p className="mb-6">
               Bem-vindo ao <strong className="text-primary-dark">Eufrásio Gourmet</strong>! Nascemos do
-              sonho de oferecer uma experiência gastronômica única e diversificada,
-              com nosso buffet variado que vai da culinária japonesa às tradições brasileiras.
-              Nossa jornada começou com a paixão por unir diferentes culturas culinárias
-              em um só lugar, e hoje nos orgulhamos de ser um ponto de encontro para
-              amantes da boa comida e de momentos memoráveis.
+              sonho de oferecer uma experiência gastronômica única e autêntica,
+              especializada na verdadeira culinária japonesa. Nossa jornada começou com a paixão
+              por trazer os sabores genuínos do Japão para Sete Lagoas, e hoje nos orgulhamos
+              de ser referência em sushi, temakis e combinados únicos.
             </p>
             <p className="mb-6">
-              Acreditamos que a diversidade culinária tem o poder de unir pessoas, contar
+              Acreditamos que a culinária japonesa tem o poder de unir pessoas, contar
               histórias e criar laços. Por isso, cada prato que sai da nossa
-              cozinha é uma celebração dos sabores do mundo, com um toque
-              contemporâneo que surpreende e encanta.
+              cozinha é uma celebração dos sabores autênticos do Japão, preparado
+              com técnicas tradicionais que surpreendem e encantam.
             </p>
 
             <h3 className="text-2xl font-semibold text-secondary-dark mt-10 mb-6">
@@ -65,8 +64,8 @@ export default function SobrePage() {
                   Receitas com Alma
                 </h4>
                 <p className="text-sm text-light-text">
-                  Nossas receitas combinam tradições culinárias diversas,
-                  desde a culinária japonesa até os sabores brasileiros autênticos.
+                  Nossas receitas seguem as tradições culinárias japonesas autênticas,
+                  com técnicas milenares e ingredientes selecionados especialmente.
                 </p>
               </div>
               <div className="flex flex-col items-center p-6 border border-pearl-500 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-pearl-900">

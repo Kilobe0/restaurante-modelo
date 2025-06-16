@@ -1,88 +1,88 @@
 @import "tailwindcss";
 
 @theme {
-  /* Base palette colors as CSS variables */
-  --color-eerie-black: #1b2021;
-  --color-eerie-black-100: #060707;
-  --color-eerie-black-200: #0b0d0d;
-  --color-eerie-black-300: #111414;
-  --color-eerie-black-400: #161a1b;
-  --color-eerie-black-500: #1b2021;
-  --color-eerie-black-600: #445153;
-  --color-eerie-black-700: #6c8084;
-  --color-eerie-black-800: #9cabae;
-  --color-eerie-black-900: #ced5d7;
+  /* Base palette colors as CSS variables - Orange Theme */
+  --color-dark: #1A0A01;
+  --color-dark-100: #0A0500;
+  --color-dark-200: #140A01;
+  --color-dark-300: #1F0F02;
+  --color-dark-400: #291402;
+  --color-dark-500: #1A0A01;
+  --color-dark-600: #4D2A08;
+  --color-dark-700: #804A0F;
+  --color-dark-800: #B36A16;
+  --color-dark-900: #E68A1D;
 
-  --color-ebony: #51513d;
-  --color-ebony-100: #10100c;
-  --color-ebony-200: #212119;
-  --color-ebony-300: #313125;
-  --color-ebony-400: #414131;
-  --color-ebony-500: #51513d;
-  --color-ebony-600: #7b7b5d;
-  --color-ebony-700: #a0a081;
-  --color-ebony-800: #c0c0ab;
-  --color-ebony-900: #dfdfd5;
+  --color-dark-orange: #913D00;
+  --color-dark-orange-100: #1D0800;
+  --color-dark-orange-200: #3A1000;
+  --color-dark-orange-300: #571800;
+  --color-dark-orange-400: #742000;
+  --color-dark-orange-500: #913D00;
+  --color-dark-orange-600: #B85A1A;
+  --color-dark-orange-700: #DF7734;
+  --color-dark-orange-800: #E6944E;
+  --color-dark-orange-900: #EDB168;
 
-  --color-moss-green: #a6a867;
-  --color-moss-green-100: #222214;
-  --color-moss-green-200: #444527;
-  --color-moss-green-300: #66673b;
-  --color-moss-green-400: #87894f;
-  --color-moss-green-500: #a6a867;
-  --color-moss-green-600: #b7b985;
-  --color-moss-green-700: #c9cba4;
-  --color-moss-green-800: #dbdcc2;
-  --color-moss-green-900: #edeee1;
+  --color-orange: #CD5E18;
+  --color-orange-100: #291305;
+  --color-orange-200: #52260A;
+  --color-orange-300: #7B390F;
+  --color-orange-400: #A44C14;
+  --color-orange-500: #CD5E18;
+  --color-orange-600: #E07B46;
+  --color-orange-700: #E69874;
+  --color-orange-800: #ECB5A2;
+  --color-orange-900: #F2D2D0;
 
-  --color-vanilla: #e3dc95;
-  --color-vanilla-100: #3c3810;
-  --color-vanilla-200: #777020;
-  --color-vanilla-300: #b3a830;
-  --color-vanilla-400: #d3c95b;
-  --color-vanilla-500: #e3dc95;
-  --color-vanilla-600: #e9e4ab;
-  --color-vanilla-700: #eeeac0;
-  --color-vanilla-800: #f4f1d5;
-  --color-vanilla-900: #f9f8ea;
+  --color-light-orange: #E8994D;
+  --color-light-orange-100: #2E1F0A;
+  --color-light-orange-200: #5C3E14;
+  --color-light-orange-300: #8A5D1E;
+  --color-light-orange-400: #B87C28;
+  --color-light-orange-500: #E8994D;
+  --color-light-orange-600: #ECAD71;
+  --color-light-orange-700: #F0C195;
+  --color-light-orange-800: #F4D5B9;
+  --color-light-orange-900: #F8E9DD;
 
-  --color-pearl: #e3dcc2;
-  --color-pearl-100: #3a331b;
-  --color-pearl-200: #746635;
-  --color-pearl-300: #ae9a50;
-  --color-pearl-400: #c9bb8a;
-  --color-pearl-500: #e3dcc2;
-  --color-pearl-600: #e9e4cf;
-  --color-pearl-700: #efeadb;
-  --color-pearl-800: #f4f1e7;
-  --color-pearl-900: #faf8f3;
+  --color-light: #DACDBF;
+  --color-light-100: #2B2419;
+  --color-light-200: #564832;
+  --color-light-300: #816C4B;
+  --color-light-400: #AC9064;
+  --color-light-500: #DACDBF;
+  --color-light-600: #E1D7CC;
+  --color-light-700: #E8E1D9;
+  --color-light-800: #EFEBE6;
+  --color-light-900: #F6F5F3;
 
-  /* Semantic colors using CSS variable references */
-  --color-primary: #a6a867;
-  --color-primary-light: #b7b985;
-  --color-primary-dark: #87894f;
-  --color-secondary: #51513d;
-  --color-secondary-light: #7b7b5d;
-  --color-secondary-dark: #414131;
-  --color-accent: #e3dc95;
-  --color-accent-dark: #d3c95b;
-  --color-background: #faf8f3;
-  --color-foreground: #1b2021;
-  --color-light-text: #445153;
+  /* Semantic colors using CSS variable references - Orange Theme */
+  --color-primary: #CD5E18;
+  --color-primary-light: #E07B46;
+  --color-primary-dark: #A44C14;
+  --color-secondary: #913D00;
+  --color-secondary-light: #B85A1A;
+  --color-secondary-dark: #742000;
+  --color-accent: #E8994D;
+  --color-accent-dark: #B87C28;
+  --color-background: #F6F5F3;
+  --color-foreground: #1A0A01;
+  --color-light-text: #4D2A08;
   --color-card-bg: #ffffff;
-  --color-footer-bg: #161a1b;
+  --color-footer-bg: #1A0A01;
 
   /* Text-on-* semantic colors for proper contrast */
-  --color-text-muted: #445153;
-  --color-text-on-primary: #1b2021;
-  --color-text-on-secondary: #faf8f3;
-  --color-text-on-accent: #1b2021;
-  --color-text-on-dark-bg: #f4f1e7; /* pearl-800 for better contrast on dark backgrounds */
-  --color-text-muted-on-dark: #c9cba4; /* moss-green-700 for muted text on dark backgrounds */
+  --color-text-muted: #4D2A08;
+  --color-text-on-primary: #F6F5F3;
+  --color-text-on-secondary: #F6F5F3;
+  --color-text-on-accent: #1A0A01;
+  --color-text-on-dark-bg: #F6F5F3; /* light-900 for better contrast on dark backgrounds */
+  --color-text-muted-on-dark: #E1D7CC; /* light-600 for muted text on dark backgrounds */
 
   /* Overlay colors with opacity */
-  --color-overlay-gallery: #1b20214D;
-  --color-overlay-hero: #1b202199;
+  --color-overlay-gallery: #1A0A014D;
+  --color-overlay-hero: #1A0A0199;
 }
 
 /* Custom CSS variables for enhanced theme support */

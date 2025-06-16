@@ -26,16 +26,16 @@ export default function AboutTeaser() {
             </h3>
             <p className="text-lg text-light-text mb-6 leading-relaxed">
               No <span className="font-semibold text-primary-dark">Eufrásio Gourmet</span>,
-              celebramos a diversidade culinária com nosso buffet variado que vai da culinária japonesa
-              às carnes grelhadas e frango caipira. Nossa paixão é oferecer uma experiência gastronômica
+              celebramos a autêntica culinária japonesa com nossos temakis frescos, hot rolls especiais
+              e combinados únicos. Nossa paixão é oferecer uma experiência gastronômica
               única onde amigos e famílias podem compartilhar momentos especiais.
             </p>
             <p className="text-light-text mb-8 leading-relaxed">
-              Descubra a essência da nossa cozinha e a dedicação que colocamos em cada prato.
+              Descubra a essência da nossa cozinha japonesa e a dedicação que colocamos em cada prato.
             </p>
             <Link
               href="/sobre"
-              className="inline-block bg-primary hover:bg-primary-dark text-eerie_black-500 font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105"
+              className="inline-block bg-primary hover:bg-primary-dark text-on-primary font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105"
             >
               Saiba Mais Sobre Nós
             </Link>

@@ -27,12 +27,17 @@ export default function MenuItemCard({ item }: MenuItemCardProps) {
       <div className="p-5 flex flex-col flex-grow"> {/* Ajustei padding */}
         <h3 className="text-xl font-semibold text-foreground mb-2">{item.name}</h3>
         <p className="text-light-text text-sm mb-4 flex-grow">{item.description}</p>
-        <div className="flex justify-between items-center mt-auto pt-3 border-t border-pearl-500"> {/* Linha separadora */}
+        {item.note && (
+          <p className="text-xs text-orange-600 bg-orange-50 p-2 rounded mb-3 border-l-4 border-orange-400">
+            <strong>Observação:</strong> {item.note}
+          </p>
+        )}
+        <div className="flex justify-between items-center mt-auto pt-3 border-t border-light-500"> {/* Linha separadora */}
           <p className="text-lg font-bold text-primary">{item.price}</p>
           {item.tags && item.tags.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {item.tags.map(tag => (
-                <span key={tag} className="text-xs bg-secondary text-pearl-900 px-2 py-1 rounded-full font-medium">
+                <span key={tag} className="text-xs bg-secondary text-light-900 px-2 py-1 rounded-full font-medium">
                   {tag}
                 </span>
               ))}

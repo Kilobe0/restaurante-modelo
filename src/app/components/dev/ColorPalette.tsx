@@ -22,53 +22,53 @@ function ColorSwatch({ name, value, className, textColor = 'text-foreground' }: 
 
 export default function ColorPalette() {
   const primaryColors = [
-    { name: 'Primary', value: '#a6a867', className: 'bg-primary' },
-    { name: 'Primary Light', value: '#b7b985', className: 'bg-primary-light' },
-    { name: 'Primary Dark', value: '#87894f', className: 'bg-primary-dark' },
+    { name: 'Primary', value: '#CD5E18', className: 'bg-primary' },
+    { name: 'Primary Light', value: '#E07B46', className: 'bg-primary-light' },
+    { name: 'Primary Dark', value: '#A44C14', className: 'bg-primary-dark' },
   ];
 
   const secondaryColors = [
-    { name: 'Secondary', value: '#51513d', className: 'bg-secondary' },
-    { name: 'Secondary Light', value: '#7b7b5d', className: 'bg-secondary-light' },
-    { name: 'Secondary Dark', value: '#414131', className: 'bg-secondary-dark' },
+    { name: 'Secondary', value: '#913D00', className: 'bg-secondary' },
+    { name: 'Secondary Light', value: '#B85A1A', className: 'bg-secondary-light' },
+    { name: 'Secondary Dark', value: '#742000', className: 'bg-secondary-dark' },
   ];
 
   const accentColors = [
-    { name: 'Accent', value: '#e3dc95', className: 'bg-accent' },
-    { name: 'Accent Dark', value: '#d3c95b', className: 'bg-accent-dark' },
+    { name: 'Accent', value: '#E8994D', className: 'bg-accent' },
+    { name: 'Accent Dark', value: '#B87C28', className: 'bg-accent-dark' },
   ];
 
   const backgroundColors = [
-    { name: 'Background', value: '#faf8f3', className: 'bg-background' },
+    { name: 'Background', value: '#F6F5F3', className: 'bg-background' },
     { name: 'Card Background', value: '#ffffff', className: 'bg-card-bg' },
-    { name: 'Footer Background', value: '#161a1b', className: 'bg-footer-bg', textColor: 'text-on-dark-bg' },
+    { name: 'Footer Background', value: '#1A0A01', className: 'bg-footer-bg', textColor: 'text-on-dark-bg' },
   ];
 
   const textColors = [
-    { name: 'Foreground', value: '#1b2021', className: 'bg-foreground', textColor: 'text-on-dark-bg' },
-    { name: 'Light Text', value: '#445153', className: 'bg-light-text', textColor: 'text-on-dark-bg' },
-    { name: 'Text Muted', value: '#445153', className: 'bg-text-muted', textColor: 'text-on-dark-bg' },
+    { name: 'Foreground', value: '#1A0A01', className: 'bg-foreground', textColor: 'text-on-dark-bg' },
+    { name: 'Light Text', value: '#4D2A08', className: 'bg-light-text', textColor: 'text-on-dark-bg' },
+    { name: 'Text Muted', value: '#4D2A08', className: 'bg-text-muted', textColor: 'text-on-dark-bg' },
   ];
 
   const semanticTextColors = [
-    { name: 'Text on Primary', value: '#1b2021', className: 'bg-text-on-primary', textColor: 'text-on-dark-bg' },
-    { name: 'Text on Secondary', value: '#faf8f3', className: 'bg-text-on-secondary' },
-    { name: 'Text on Accent', value: '#1b2021', className: 'bg-text-on-accent', textColor: 'text-on-dark-bg' },
-    { name: 'Text on Dark BG', value: '#f4f1e7', className: 'bg-text-on-dark-bg' },
-    { name: 'Text Muted on Dark', value: '#c9cba4', className: 'bg-text-muted-on-dark' },
+    { name: 'Text on Primary', value: '#F6F5F3', className: 'bg-text-on-primary' },
+    { name: 'Text on Secondary', value: '#F6F5F3', className: 'bg-text-on-secondary' },
+    { name: 'Text on Accent', value: '#1A0A01', className: 'bg-text-on-accent', textColor: 'text-on-dark-bg' },
+    { name: 'Text on Dark BG', value: '#F6F5F3', className: 'bg-text-on-dark-bg' },
+    { name: 'Text Muted on Dark', value: '#E1D7CC', className: 'bg-text-muted-on-dark' },
   ];
 
   const overlayColors = [
-    { name: 'Overlay Gallery', value: '#1b20214D', className: 'bg-overlay-gallery', textColor: 'text-on-dark-bg' },
-    { name: 'Overlay Hero', value: '#1b202199', className: 'bg-overlay-hero', textColor: 'text-on-dark-bg' },
+    { name: 'Overlay Gallery', value: '#1A0A014D', className: 'bg-overlay-gallery', textColor: 'text-on-dark-bg' },
+    { name: 'Overlay Hero', value: '#1A0A0199', className: 'bg-overlay-hero', textColor: 'text-on-dark-bg' },
   ];
 
   const originalPalette = [
-    { name: 'Eerie Black', value: '#1b2021', className: 'bg-eerie_black-500', textColor: 'text-on-dark-bg' },
-    { name: 'Ebony', value: '#51513d', className: 'bg-ebony-500', textColor: 'text-on-dark-bg' },
-    { name: 'Moss Green', value: '#a6a867', className: 'bg-moss_green-500' },
-    { name: 'Vanilla', value: '#e3dc95', className: 'bg-vanilla-500' },
-    { name: 'Pearl', value: '#e3dcc2', className: 'bg-pearl-500' },
+    { name: 'Dark', value: '#1A0A01', className: 'bg-dark-500', textColor: 'text-on-dark-bg' },
+    { name: 'Dark Orange', value: '#913D00', className: 'bg-dark-orange-500', textColor: 'text-on-dark-bg' },
+    { name: 'Orange', value: '#CD5E18', className: 'bg-orange-500' },
+    { name: 'Light Orange', value: '#E8994D', className: 'bg-light-orange-500' },
+    { name: 'Light', value: '#DACDBF', className: 'bg-light-500' },
   ];
 
   return (

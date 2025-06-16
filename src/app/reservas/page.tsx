@@ -20,17 +20,17 @@ export default function ReservasPage() {
           <form action="#" method="POST" className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-light-text mb-1">Nome Completo para a Reserva</label>
-              <input type="text" name="name" id="name" autoComplete="name" required className="mt-1 block w-full px-4 py-2.5 border-ebony-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm bg-pearl-900 text-foreground placeholder-ebony-600" placeholder="Seu nome"/>
+              <input type="text" name="name" id="name" autoComplete="name" required className="mt-1 block w-full px-4 py-2.5 border-light-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm bg-light-900 text-foreground placeholder-light-600" placeholder="Seu nome"/>
             </div>
             {/* ... outros inputs e selects com cores da paleta ... */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-light-text mb-1">Email de Contato</label>
-                <input type="email" name="email" id="email" autoComplete="email" required className="mt-1 block w-full px-4 py-2.5 border-ebony-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm bg-pearl-900 text-foreground placeholder-ebony-600" placeholder="seu@email.com"/>
+                <input type="email" name="email" id="email" autoComplete="email" required className="mt-1 block w-full px-4 py-2.5 border-light-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm bg-light-900 text-foreground placeholder-light-600" placeholder="seu@email.com"/>
               </div>
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-light-text mb-1">Telefone de Contato</label>
-                <input type="tel" name="phone" id="phone" autoComplete="tel" required className="mt-1 block w-full px-4 py-2.5 border-ebony-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm bg-pearl-900 text-foreground placeholder-ebony-600" placeholder="(XX) XXXXX-XXXX"/>
+                <input type="tel" name="phone" id="phone" autoComplete="tel" required className="mt-1 block w-full px-4 py-2.5 border-light-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-dark focus:border-primary-dark sm:text-sm bg-light-900 text-foreground placeholder-light-600" placeholder="(XX) XXXXX-XXXX"/>
               </div>
             </div>
             {/* ... */}
@@ -39,7 +39,7 @@ export default function ReservasPage() {
                 Confirmar Reserva
               </button>
             </div>
-            <p className="text-xs text-ebony-600 text-center mt-4">
+            <p className="text-xs text-light-600 text-center mt-4">
               Sua reserva estará sujeita à confirmação. Entraremos em contato caso haja algum imprevisto.
             </p>
           </form>

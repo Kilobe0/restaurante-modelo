@@ -6,14 +6,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Nosso Cardápio", // O template no layout.tsx adicionará "| Eufrásio Gourmet"
-  description: "Explore a variedade de pratos deliciosos do Eufrásio Gourmet, desde nosso buffet variado com culinária japonesa até pratos tradicionais brasileiros.",
+  description: "Descubra nossa autêntica culinária japonesa no Eufrásio Gourmet: temakis frescos, hot rolls especiais, combinados variados e bebidas geladas. Sushi de qualidade em Sete Lagoas.",
 };
 
 export default function CardapioPage() {
-  const entradas = menuItems.filter(item => item.category === 'entrada');
-  const principais = menuItems.filter(item => item.category === 'principal');
-  const sobremesas = menuItems.filter(item => item.category === 'sobremesa');
   const bebidas = menuItems.filter(item => item.category === 'bebida');
+  const temakis = menuItems.filter(item => item.category === 'temaki');
+  const hotRolls = menuItems.filter(item => item.category === 'hot-roll');
+  const combinados = menuItems.filter(item => item.category === 'combinado');
 
   const CategorySection = ({ title, items }: { title: string, items: typeof menuItems }) => {
     if (items.length === 0) return null;
@@ -36,10 +36,10 @@ export default function CardapioPage() {
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <SectionTitle className="text-foreground mb-16">Nosso Cardápio Delicioso</SectionTitle> {/* OK */}
 
-        <CategorySection title="Entradas Frescas" items={entradas} />
-        <CategorySection title="Pratos Principais Saborosos" items={principais} />
-        <CategorySection title="Sobremesas Irresistíveis" items={sobremesas} />
-        <CategorySection title="Bebidas Refrescantes" items={bebidas} />
+        <CategorySection title="Bebidas" items={bebidas} />
+        <CategorySection title="Temakis" items={temakis} />
+        <CategorySection title="Hot Rolls" items={hotRolls} />
+        <CategorySection title="Combinados" items={combinados} />
       </div>
     </div>
   );
