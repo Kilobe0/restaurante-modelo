@@ -1,6 +1,6 @@
 // src/app/components/layout/Footer.tsx
 import Link from 'next/link';
-import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import Image from 'next/image';
 
 export default function Footer() {
